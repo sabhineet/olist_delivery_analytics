@@ -4,8 +4,7 @@ SQL (BigQuery) + Python (statsmodels) + Tableau analysis of 96,470 delivered ord
 
 **Question.** Do review scores follow raw delivery time, or the gap between delivery and the promised date? And how does the penalty for a late day compare with the reward for an early day?
 
-- Kaggle notebook: `<add Kaggle notebook link>`
-- Tableau Public dashboards: `<add Tableau Public link>`
+- Kaggle notebook: [Speed or Promise?](https://www.kaggle.com/code/abhineetsrivastavaa/speed-or-promise)
 - Full write-up: [`docs/findings.md`](docs/findings.md)
 
 ## Headline
@@ -73,4 +72,4 @@ All results are associations after controls (state, month, category, price, frei
 
 ## Data and licence
 
-Data: Olist Brazilian E-Commerce Public Dataset, CC BY-NC-SA 4.0. The raw files and `model_data.csv` are not committed; see [`data/README.md`](data/README.md). Code in this repository is released under the MIT licence.
+Data: Olist Brazilian E-Commerce Public Dataset, CC BY-NC-SA 4.0. see [`data/README.md`](data/README.md). Code in this repository is released under the MIT licence.
