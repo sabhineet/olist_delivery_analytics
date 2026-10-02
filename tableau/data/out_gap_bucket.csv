@@ -1,0 +1,25 @@
+gap_bucket,review_timing,orders,reviews,score_sum,n_1_2_star,n_5_star,avg_score,pct_1_2_star,pct_5_star
+3: 1-7 days early,answered after delivery,17193,17193,72238,1756,9885,4.202,10.21,57.49
+7: 8-14 days late,answered after delivery,57,57,201,15,23,3.526,26.32,40.35
+4: on promised day,answered after delivery,1272,1272,5137,156,645,4.039,12.26,50.71
+1: 15+ days early,answered after delivery,34710,34710,150073,3136,22313,4.324,9.03,64.28
+5: 1-3 days late,answered after delivery,1436,1436,5379,267,586,3.746,18.59,40.81
+8: 15+ days late,answered after delivery,19,19,55,8,5,2.895,42.11,26.32
+2: 8-14 days early,answered after delivery,36088,36088,155585,3210,22750,4.311,8.89,63.04
+6: 4-7 days late,answered after delivery,396,396,1462,81,160,3.692,20.45,40.4
+7: 8-14 days late,answered before delivery,1389,1389,2215,1144,76,1.595,82.36,5.47
+2: 8-14 days early,answered before delivery,70,70,279,10,38,3.986,14.29,54.29
+4: on promised day,answered before delivery,8,8,26,3,3,3.25,37.5,37.5
+1: 15+ days early,answered before delivery,61,61,252,9,37,4.131,14.75,60.66
+6: 4-7 days late,answered before delivery,1352,1352,2214,1102,86,1.638,81.51,6.36
+5: 1-3 days late,answered before delivery,416,416,716,328,28,1.721,78.85,6.73
+3: 1-7 days early,answered before delivery,41,41,155,9,22,3.78,21.95,53.66
+8: 15+ days late,answered before delivery,1316,1316,2246,1038,91,1.707,78.88,6.91
+8: 15+ days late,no review,49,0,,0,0,,,
+1: 15+ days early,no review,168,0,,0,0,,,
+3: 1-7 days early,no review,107,0,,0,0,,,
+6: 4-7 days late,no review,54,0,,0,0,,,
+7: 8-14 days late,no review,32,0,,0,0,,,
+4: on promised day,no review,12,0,,0,0,,,
+5: 1-3 days late,no review,18,0,,0,0,,,
+2: 8-14 days early,no review,206,0,,0,0,,,

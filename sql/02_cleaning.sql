@@ -19,6 +19,13 @@
 --   D6  Impossible timelines are flagged (has_timeline_issue), not deleted.
 --   D7  Multi-seller orders: main seller and main category = the most
 --       expensive item. n_sellers is kept so they can be filtered later.
+--   D8  answered_before_delivery = the kept review was answered BEFORE the
+--       parcel was delivered (answer timestamp < delivered timestamp).
+--       NULL when the order has no review. Check V4 at the bottom: it must
+--       return 4,653 reviews (4,473 on late orders).
+--   D9  handover_gap_days = carrier pickup DATE minus the LATEST shipping
+--       limit DATE in the order (positive = seller handed over late).
+--       Confirmed by 03c_check_handover_gap.sql (96,469 of 96,470 match).
 -- =====================================================================
 
 
@@ -167,7 +174,8 @@ SELECT
   r.review_score,
   r.has_comment,
   r.review_created_ts,
-  r.review_answered_ts
+  r.review_answered_ts,
+  r.review_answered_ts < d.delivered_ts AS answered_before_delivery   -- D8; NULL if no review
 FROM olist.delivered_orders d
 LEFT JOIN olist.raw_customers      c  ON d.customer_id    = c.customer_id
 LEFT JOIN olist.order_items_agg    ia ON d.order_id       = ia.order_id
@@ -216,8 +224,8 @@ SELECT
   COUNTIF(n_sellers > 1)                       AS multi_seller_orders
 FROM olist.order_analysis;
 
--- V3. First look: late vs on-time (your anchor for 03_delivery_kpis.sql).
--- EXPECT: roughly 8% late, and a clearly lower average review for late orders.
+-- V3. First look: late vs on-time (anchor for 05_outputs.sql).
+-- EXPECT: 6,534 late orders (6.77%), average review 2.27 late vs 4.29 on time, 646 without review in total.
 SELECT
   is_late,
   COUNT(*)                                                  AS orders,
@@ -226,3 +234,13 @@ SELECT
   COUNTIF(review_score IS NULL)                             AS no_review
 FROM olist.order_analysis
 GROUP BY is_late;
+
+-- V4. answered_before_delivery check (D8).
+-- EXPECT: answered_before = 4,653 | late_and_answered_before = 4,473 | no_review = 646
+-- If the numbers differ, the deployed definition used dates instead of timestamps.
+-- Try:  DATE(r.review_answered_ts) < DATE(d.delivered_ts)  and compare again.
+SELECT
+  COUNTIF(answered_before_delivery)                AS answered_before,
+  COUNTIF(answered_before_delivery AND is_late)    AS late_and_answered_before,
+  COUNTIF(review_score IS NULL)                    AS no_review
+FROM olist.order_analysis;

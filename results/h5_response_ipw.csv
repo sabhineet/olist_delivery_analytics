@@ -1,0 +1,6 @@
+item,value,ci_low,ci_high
+"odds ratio of a review, late vs on-time",0.2524578837449311,0.20596354777902426,0.3094478792594388
+unweighted: gain per early day,0.023788302857769394,,
+unweighted: cost per late day,0.12172176348507915,,
+IPW: gain per early day,0.023972198398092164,,
+IPW: cost per late day,0.1214218447353851,,

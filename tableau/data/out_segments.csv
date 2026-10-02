@@ -1,0 +1,6 @@
+segment,orders,pct_of_orders,items_revenue,pct_of_revenue
+5: no review,646,0.67,111504.48,0.84
+4: on time + 3-5 stars,81154,84.12,10812219.63,81.79
+2: late + 3-5 stars,2398,2.49,334354.14,2.53
+3: on time + low score (1-2),8289,8.59,1343158.27,10.16
+1: late + low score (1-2),3983,4.13,619012.41,4.68

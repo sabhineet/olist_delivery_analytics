@@ -1,0 +1,25 @@
+sample,term,est,se,p
+all reviews,late slope per day (at state-mean promise),-0.10810410243104804,0.002084940930639533,
+all reviews,late x promise (per +1 promised day),0.00263875589087531,0.00030723520359445265,8.794665214549229e-18
+all reviews,late slope at promise -7 d vs state mean,-0.1265753936671752,0.0027016834902755856,
+all reviews,late slope at promise +7 d vs state mean,-0.08963281119492086,0.003262732563205486,
+all reviews,"late slope, promise tercile 0 (0 = shortest)",-0.12530356597278458,0.003095652507417825,
+all reviews,"late slope, promise tercile 1 (0 = shortest)",-0.11815967000791402,0.002898071879592304,
+all reviews,"late slope, promise tercile 2 (0 = shortest)",-0.10467126305853988,0.004131397061151234,
+all reviews,slopes equal across terciles (Wald chi2),16.950573094485723,,0.0002085594246038102
+"all reviews, timing control",late slope per day (at state-mean promise),-0.0588362560469414,0.009001169496090585,
+"all reviews, timing control",late x promise (per +1 promised day),0.0013552653323769656,0.00024808612012219855,4.684646074585491e-08
+"all reviews, timing control",late slope at promise -7 d vs state mean,-0.06832311337358016,0.008875447549262512,
+"all reviews, timing control",late slope at promise +7 d vs state mean,-0.04934939872030264,0.00944987376893085,
+"all reviews, timing control","late slope, promise tercile 0 (0 = shortest)",-0.0766100592066811,0.008961724961019817,
+"all reviews, timing control","late slope, promise tercile 1 (0 = shortest)",-0.07348672525414944,0.009140617859254775,
+"all reviews, timing control","late slope, promise tercile 2 (0 = shortest)",-0.06710094656013958,0.009435678688451228,
+"all reviews, timing control",slopes equal across terciles (Wald chi2),6.120948146487718,,0.04686547228628383
+answered after delivery only,late slope per day (at state-mean promise),-0.06531926903628602,0.009400242148975772,
+answered after delivery only,late x promise (per +1 promised day),-0.00032186765133155866,0.0013604124870168419,0.8129705096319042
+answered after delivery only,late slope at promise -7 d vs state mean,-0.0630661954769651,0.0106765781679907,
+answered after delivery only,late slope at promise +7 d vs state mean,-0.06757234259560693,0.015624037658525335,
+answered after delivery only,"late slope, promise tercile 0 (0 = shortest)",-0.06208047296009264,0.011812249491352364,
+answered after delivery only,"late slope, promise tercile 1 (0 = shortest)",-0.09254496471706272,0.018535334408423053,
+answered after delivery only,"late slope, promise tercile 2 (0 = shortest)",-0.08619618895713584,0.019594430828691393,
+answered after delivery only,slopes equal across terciles (Wald chi2),2.38778458348774,,0.30303944763148083

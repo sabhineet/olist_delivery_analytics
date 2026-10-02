@@ -1,3 +1,8 @@
+-- 04_sellers_regions_customers.sql
+-- Exploration queries behind the seller, state and monthly views. Source: olist.order_analysis.
+-- A-B: seller late rates and concentration | C-D: states | P5: promise variation within a state | P6: RJ vs SP vs other by month.
+-- Run each query separately.
+
 -- A: late rate by seller, single-seller orders only, 30+ orders
 SELECT
   main_seller_id AS seller_id,

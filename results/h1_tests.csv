@@ -1,0 +1,9 @@
+sample,test,stat,df,p
+all reviews,"gap adds to speed (LR, M3 vs M1)",2002.5407153744309,5,0.0
+all reviews,"speed adds to gap (LR, M3 vs M2)",749.0902734132251,5,1.189794815055416e-159
+all reviews,gap terms (seller-clustered Wald chi2),1993.7814485622175,5,0.0
+all reviews,speed terms (seller-clustered Wald chi2),303.3819391645371,5,1.87732626236133e-63
+answered after delivery only,"gap adds to speed (LR, M3 vs M1)",68.8857074562693,5,1.7476077846610913e-13
+answered after delivery only,"speed adds to gap (LR, M3 vs M2)",741.7847313179518,5,4.523588441139988e-158
+answered after delivery only,gap terms (seller-clustered Wald chi2),50.460973326611644,5,1.1151826350018849e-09
+answered after delivery only,speed terms (seller-clustered Wald chi2),255.87724071288247,5,3.0123904108770873e-53

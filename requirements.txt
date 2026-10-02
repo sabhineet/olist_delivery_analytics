@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+patsy
+statsmodels>=0.14
+matplotlib
+jupyter

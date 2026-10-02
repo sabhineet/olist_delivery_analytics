@@ -1,3 +1,7 @@
+-- 03b_review_timing_checks.sql
+-- Purpose: check how survey timing (answering before the parcel arrives) distorts the late-side score curve.
+-- Needs answered_before_delivery from 02_cleaning.sql (D8). Run each query separately.
+
 -- P1: when were pre-delivery reviews answered, relative to the promised date?
 SELECT
   CASE
@@ -39,8 +43,6 @@ SELECT has_timeline_issue, is_late, COUNT(*) AS orders,
 FROM `olist.order_analysis`
 GROUP BY 1, 2 ORDER BY 1, 2;
 
-
-
 -- P4: does the late-side saturation come from pre-delivery reviews?
 SELECT
   CASE WHEN gap_days <= 3  THEN '1: 1-3 late'
@@ -54,4 +56,3 @@ SELECT
 FROM `olist.order_analysis`
 WHERE is_late AND review_score IS NOT NULL
 GROUP BY 1, 2 ORDER BY 1, 2;
-
